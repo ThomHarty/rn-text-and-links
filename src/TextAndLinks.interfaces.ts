@@ -11,9 +11,9 @@ export interface ITextAndLinksToParse {
 }
 
 export interface ITextAndLinksProps extends ITextAndLinksToParse {
-  textStyles: TextStyle
-  linkStyles: ViewStyle
-  linkContainerStyles: ViewStyle
+  textStyles?: TextStyle
+  linkStyles?: ViewStyle
+  linkContainerStyles?: ViewStyle
 }
 
 export interface ITextObject {
