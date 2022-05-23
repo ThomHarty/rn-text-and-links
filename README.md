@@ -1,5 +1,7 @@
 ## React Native Text and Links
 
+Add one or more onPress events to a string in React Native
+
 #### Install
 
 ```
@@ -49,10 +51,7 @@ export const App = (): ReactElement => {
 
 ```ts
 text: string
-links: {
-        text: string
-        onPress: () => void
-    }[]
+links: { text: string, onPress: () => void }[]
 textStyles?: TextStyle
 linkStyles?: TextStyle
 linkContainerStyles?: ViewStyle
