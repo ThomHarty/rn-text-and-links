@@ -13,7 +13,7 @@ export interface ITextAndLinksToParse {
 export interface ITextAndLinksProps extends ITextAndLinksToParse {
   containerStyles?: ViewStyle
   textStyles?: TextStyle
-  linkStyles?: ViewStyle
+  linkStyles?: TextStyle
   linkContainerStyles?: ViewStyle
 }
 
