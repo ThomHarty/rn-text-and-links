@@ -2,11 +2,11 @@
 
 #### Install
 
-```ts
+```
 yarn add rn-text-and-links
 ```
 
-```ts
+```
 npm i rn-text-and-links
 ```
 
