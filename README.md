@@ -2,17 +2,17 @@
 
 #### Install
 
-```
+```ts
 yarn add rn-text-and-links
 ```
 
-```
+```ts
 npm i rn-text-and-links
 ```
 
 #### Example
 
-```
+```ts
 import React, {ReactElement} from 'react';
 import {SafeAreaView} from 'react-native';
 import {TextAndLinks, ITextAndLinksProps} from 'rn-text-and-links';
@@ -47,7 +47,7 @@ export const App = (): ReactElement => {
 
 #### Props
 
-```
+```ts
 text: string
 links: {
         text: string
