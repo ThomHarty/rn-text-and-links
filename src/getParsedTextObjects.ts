@@ -1,4 +1,4 @@
-import { ITextAndLinksToParse, ITextObject } from './interfaces'
+import { ITextAndLinksToParse, ITextObject } from './TextAndLinks.interfaces'
 
 export const getParsedTextObjects = ({ text, links }: ITextAndLinksToParse) => {
   let findLinks: string = text
