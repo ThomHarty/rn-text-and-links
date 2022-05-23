@@ -9,10 +9,10 @@ export const TextAndLinks = memo(
   ({
     text,
     links,
-    containerStyles,
     textStyles,
     linkStyles,
     linkContainerStyles,
+    containerStyles,
   }: ITextAndLinksProps): ReactElement => {
     const parsedTextObjects = useCallback(() => {
       return getParsedTextObjects({ text, links })
