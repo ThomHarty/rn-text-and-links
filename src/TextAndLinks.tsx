@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { memo, ReactElement, useCallback } from 'react'
-import { Text, TouchableWithoutFeedback, View } from 'react-native'
+import { Text, TouchableOpacity, View } from 'react-native'
 
 import { getParsedTextObjects } from './getParsedTextObjects'
 import { ITextAndLinksProps, ITextObject } from './TextAndLinks.interfaces'
@@ -28,12 +28,13 @@ export const TextAndLinks = memo(
                 <Text style={textStyles}>{item.text}</Text>
               )}
               {item.type === 'link' && (
-                <TouchableWithoutFeedback
+                <TouchableOpacity
                   onPress={item.onPress}
                   style={linkContainerStyles}
+                  activeOpacity={1}
                 >
                   <Text style={linkStyles}>{item.text}</Text>
-                </TouchableWithoutFeedback>
+                </TouchableOpacity>
               )}
             </View>
           )
