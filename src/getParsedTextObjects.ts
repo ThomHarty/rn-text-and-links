@@ -15,14 +15,14 @@ export const getParsedTextObjects = ({ text, links }: ITextAndLinksToParse) => {
   let objects: ITextObject[] = []
   replaceLinks()
     .split('#link#')
-    .forEach((item: any) => {
+    .forEach((item: string) => {
       if (item.includes('#!#')) {
         const linkAndText = item.split('#!#')
         objects = [
           ...objects,
           {
             type: 'link',
-            onPress: links![linkAndText[0]].onPress,
+            onPress: links![Number(linkAndText[0])].onPress,
             text: `${linkAndText[1]}`,
           },
         ]
