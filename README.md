@@ -5,11 +5,11 @@ Add one or more onPress events to a string in React Native
 #### Install
 
 ```
-yarn add rn-text-and-links
+yarn add --dev rn-text-and-links
 ```
 
 ```
-npm i rn-text-and-links
+npm i --save-dev rn-text-and-links
 ```
 
 #### Example
